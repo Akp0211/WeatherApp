@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>Weather</h1>
+
+        <div class="controls">
+            <input type="text" id="cityInput" placeholder="Search city...">
+            <button id="searchBtn">Search</button>
+            <button id="unitToggle">°F</button>
+            <button id="themeToggle">🌙</button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="weather-card">
+            <h2 id="cityName">Lucknow</h2>
+            <img id="weatherIcon" src="" alt="">
+            <h1 id="temp">--°</h1>
+            <p id="condition">Loading...</p>
+            <p>Feels like: <span id="feelsLike">--</span></p>
+        </section>
+
+        <section class="details-grid">
+            <div class="card">Humidity: <span id="humidity"></span></div>
+            <div class="card">Wind: <span id="wind"></span></div>
+            <div class="card">Pressure: <span id="pressure"></span></div>
+            <div class="card">UV Index: <span id="uv"></span></div>
+            <div class="card">Sunrise: <span id="sunrise"></span></div>
+            <div class="card">Sunset: <span id="sunset"></span></div>
+        </section>
+
+        <section>
+            <h3>Hourly Forecast</h3>
+            <div id="hourlyForecast" class="forecast-row"></div>
+        </section>
+
+        <section>
+            <h3>5-Day Forecast</h3>
+            <div id="dailyForecast" class="forecast-row"></div>
+        </section>
+
+    </main>
+
+</div>
+<!-- Connecting JavaScript files -->
+<script src="ConnectAPI.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
