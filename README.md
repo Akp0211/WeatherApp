@@ -19,6 +19,3 @@ A modern weather app inspired by Google Weather.
 
 ## API
 OpenWeatherMap API used.
-
-## Deployment
-Can be deployed on GitHub Pages or Netlify.
